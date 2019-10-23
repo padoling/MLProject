@@ -8,13 +8,16 @@
 			<div class="row">
 				<div class="col">
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new-project-modal" data-whatever="@mdo">새 프로젝트 생성...</button>
+					<div>새로운 기계학습 모델을 생성합니다.</div>
 				</div>
 				<div class="col">
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#existing-project-modal" data-whatever="@mdo">기존 프로젝트 선택...</button>
+					<div>기존에 만들어 둔 모델을 선택해 수정하거나 테스트합니다.</div>
 				</div>
 			</div>
 			
 			<!-- new project modal -->
+			<!-- 유효성 체크 : 이름 입력 여부 -->
 			<div class="modal fade" id="new-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">

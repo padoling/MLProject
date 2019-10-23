@@ -243,13 +243,14 @@
 			var numberIndex = '';
 			var stringIndex = '';
 			for (var index in "<c:out value='${list}'/>") {
+				console.log(index);
 				i++;
-				var radio = document.getElementsByName('check_'+String(i));
-				console.log(index)
-				console.log(radio)
-				if(radio[0].checked) {
+				var rd = document.getElementsByName('check_'+String(i));
+				console.log(rd[0]);
+				console.log(rd[1]);
+				if(rd[0].checked) {
 					numberIndex += index + ' ';
-				} else if(radio[1].checked) {
+				} else if(rd[1].checked) {
 					stringIndex += index + ' ';
 				}
 			}

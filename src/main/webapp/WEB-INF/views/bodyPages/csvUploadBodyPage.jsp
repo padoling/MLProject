@@ -11,7 +11,7 @@
 	
     <div id="wrapper">
     	<div class="container">
-    	
+    		<div>모델을 학습시킬 때 사용할 데이터 파일을 업로드합니다.</div>
     		<!-- csv파일 업로드 창 -->
     		<form id="upload_file" action="./fileUploadAction" method="post" enctype="multipart/form-data">
 				<div class="form-group row">
@@ -22,8 +22,9 @@
 					</div>
 				</div>
 				<div id="comment">
-					! csv파일의 첫번째 행에 각 열의 이름이 들어있는지 확인해주세요.<br>
-					! y label로 설정할 열을 제외한 모든 열이 x label인지 확인해주세요.
+					* csv파일의 첫번째 행에 각 열의 이름이 들어있는지 확인해주세요.<br>
+					* y label로 설정할 열을 제외한 모든 열이 x label인지 확인해주세요.<br>
+					두 사항 모두 확인 후 아래 "적용" 버튼을 눌러주세요.
 				</div>
 				<button type="button" class="btn btn-outline-warning" onclick="upload_file()">적용</button>
 			</form>
@@ -46,7 +47,7 @@
 		var d_idx = null;
 	 	var index = null;
 	 	var check_upload = false;
-	 	var comment = '! csv파일의 첫번째 행에 각 열의 이름이 들어있는지 확인해주세요.<br>! y label로 설정할 열을 제외한 모든 열이 x label인지 확인해주세요.';
+	 	var comment = '* csv파일의 첫번째 행에 각 열의 이름이 들어있는지 확인해주세요.<br>* y label로 설정할 열을 제외한 모든 열이 x label인지 확인해주세요.<br>두 사항 모두 확인 후 아래 "적용" 버튼을 눌러주세요.';
 	 	
 	 	// 적용버튼 누른 것 리셋
 	 	function check_upload_reset() {
